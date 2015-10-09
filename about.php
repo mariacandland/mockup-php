@@ -5,7 +5,7 @@
  */
  
   // Set the title of this page
-  $pageTitle = "about";
+  $pageTitle = 'about';
  
 ?>
  
