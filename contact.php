@@ -1,31 +1,16 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <!-- Adding the Page Title from the index, about, or contact pages -->
-    <title>Contact | Maria-Candland</title>
-
-    <!-- Tell the browser to render the view width correctly -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Link our stylesheet -->
-    <link rel="stylesheet" href="style.css">
-  </head>
-
-
-  <body id="contact">
-    <header>
-      <div class="row clearfix">
-        <a href="contact.html"><img class="logo" src="images/logo.png"/></a>
-
-        <!-- Our Site Navigation -->
-        <nav>
-        	<a href="index.html">Home</a>
-        	<a href="about.html">About</a>
-        	<a href="contact.html">Contact</a>
-        </nav>
-
-      </div>
-    </header>
+<?php
+/*
+ * Setting variables for this specific page
+ * before they are used in header.php
+ */
+ 
+  // Set the title of this page
+  $pageTitle = "Contact";
+ 
+?>
+ 
+  <!-- Include the header and navigation -->
+  <?php include 'header.php'; ?>
 
     <!-- Font -->
           <link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
@@ -46,18 +31,6 @@
 
     </div>
 
-
-    <footer>
-      <!-- Our Site Navigation -->
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-
-      <!-- Site Copyright -->
-    	<p>Copyright 2015 - Maria Candland</p>
-    </footer>
-
-  </body>
-</html>
+   
+  <!-- Include the footer -->
+  <?php include 'footer.php'; ?>
