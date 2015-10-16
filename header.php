@@ -19,7 +19,7 @@ $userName = 'Maria';
 
   <body id="<?php echo $pageID; ?>">
     <header>
-      <div class="row clearfix">
+      <div class="row">
 
           <!-- Font -->
           <link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>

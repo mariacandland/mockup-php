@@ -1,0 +1,26 @@
+  /* Navigation */
+nav {
+  margin-top: 40px;
+
+
+    header & {
+      float: right;
+      text-align: right;
+    }
+    
+    @include breakpoint(phone) {
+      float: none;
+      text-align: center;
+    }
+}
+
+
+ a {
+  margin-right: 20px;
+  font-size: 30px;
+  color: $orange;
+  text-decoration: none;
+     &:last-of-type {
+    margin: 0;
+    }
+}

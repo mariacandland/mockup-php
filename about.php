@@ -16,7 +16,7 @@
           <link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
       <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 
-    <div class="row clearfix">
+    <div class="row">
 
       <!-- Content area that is a two third column -->
       <div class="column one-half">

@@ -16,7 +16,7 @@
           <link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
       <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 
-    <div class="row clearfix">
+    <div class="row">
 
       <!-- Half column with heading and message -->
       <div class="column one-half">

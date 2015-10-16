@@ -1,0 +1,39 @@
+/* Clearfix */
+@mixin clearfix {
+  *zoom: 1;
+
+
+    &:before,
+    &:after {
+      content: " ";
+      display: table;
+    }
+
+    &:after {
+      clear: both;
+    }
+}
+
+@mixin ease($time: 333ms) {
+  transition: $time all ease-in-out;
+}
+
+
+$breakpoints: (
+    'phone':   ( max-width:  400px ),
+    'tablet':  ( max-width:  800px ),
+    'laptop': ( max-width:  1024px ),
+    'large':  ( min-width: 1921px )  // This is a query for a large screen
+);
+
+// Mixin
+@mixin breakpoint($name) {
+    @if map-has-key($breakpoints, $name) {
+        @media #{inspect(map-get($breakpoints, $name))} {
+            @content;
+        }
+    }
+    @else {
+        @warn "Couldn't find a breakpoint named `#{$name}`.";
+    }
+}
