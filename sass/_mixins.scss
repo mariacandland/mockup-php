@@ -20,13 +20,13 @@
 
 
 $breakpoints: (
-    'phone':   ( max-width:  400px ),
+    'phone':   ( max-width:  500px ),
     'tablet':  ( max-width:  800px ),
     'laptop': ( max-width:  1024px ),
     'large':  ( min-width: 1921px )  // This is a query for a large screen
 );
 
-// Mixin
+/* mixin */
 @mixin breakpoint($name) {
     @if map-has-key($breakpoints, $name) {
         @media #{inspect(map-get($breakpoints, $name))} {
@@ -35,5 +35,19 @@ $breakpoints: (
     }
     @else {
         @warn "Couldn't find a breakpoint named `#{$name}`.";
+    }
+}
+
+
+/* background-image */
+@mixin background-image($behavior: fixed) {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: $behavior !important;
+
+    // Attachment scroll on mobile and unsupported browsers
+    html.touch & { 
+        background-attachment: scroll !important; 
     }
 }

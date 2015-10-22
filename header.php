@@ -15,16 +15,15 @@ $userName = 'Maria';
 
     <!-- Link our stylesheet -->
     <link rel="stylesheet" href="style.css">
-  </head>
-
-  <body id="<?php echo $pageID; ?>">
-    <header>
-      <div class="row">
 
           <!-- Font -->
           <link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
           <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    </head>
 
+  <body id="<?php echo $pageID; ?>">
+    <header>
+      <div class="row">
         <!-- Our Logo -->
         <a href="index.html"><img class="logo" src="images/logo.png"></a>
 

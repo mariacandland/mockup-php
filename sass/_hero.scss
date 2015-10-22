@@ -1,12 +1,12 @@
+
 .hero {
   background: $black;
   background-image: url(images/leaves.png);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  @include background-image;
+    
+    /* background-image is in mixins */
 
-
- h1 {
+h1 {
   margin: 0;
   padding: 120px 0;
   color: white;
@@ -15,4 +15,7 @@
   font-size: 45px;
  }
 }
+
+
+
 
