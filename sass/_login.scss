@@ -1,0 +1,20 @@
+body {
+    background: $dark-gray;
+    }
+
+#login p {
+    margin-top: 15px;
+    position: center;
+}
+
+#login p span {
+    position: center;
+    }
+
+#login input {
+    border: medium none;
+    height: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 150px;
+}
